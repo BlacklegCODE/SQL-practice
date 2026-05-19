@@ -1,4 +1,4 @@
-to get multiple appearing readings only once:
+--to get multiple appearing readings only once:
 select distinct first_name from actor
 
 select distinct rating, rental_duration from film
