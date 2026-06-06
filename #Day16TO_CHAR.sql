@@ -16,3 +16,9 @@ group by modi
 --sum, Day, date
 select sum(amount), to_char( payment_date, 'Day-DD-MM-YYYY') as p_day from payment
 group by p_day
+
+
+--sum, month, year
+
+select sum(amount), to_char(payment_date, 'Month-YYYY') as p_date from payment
+group by p_date
