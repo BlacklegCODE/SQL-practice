@@ -22,3 +22,8 @@ group by p_day
 
 select sum(amount), to_char(payment_date, 'Month-YYYY') as p_date from payment
 group by p_date
+
+
+--sum, weekday, time
+select sum(amount), to_char(payment_date, 'Day HH:MM') as times from payment
+group by times
