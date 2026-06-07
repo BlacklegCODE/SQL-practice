@@ -7,3 +7,12 @@ from rental
 order by 2 asc
 
 --Challenge question query:
+
+
+--You need to create a list for the support team of all rental durations of customer with
+--customer_id 35
+
+select customer_id,
+return_date-rental_date as duration
+from rental 
+where customer_id = 35
