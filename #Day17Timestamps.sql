@@ -16,3 +16,12 @@ select customer_id,
 return_date-rental_date as duration
 from rental 
 where customer_id = 35
+
+
+--Also you need to find out for the support team which customer has the
+--longest average rental duration?
+
+select customer_id, avg(return_date - rental_date) as duration 
+from rental
+group by customer_id
+order by duration desc
